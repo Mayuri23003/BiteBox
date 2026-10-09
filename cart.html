@@ -55,118 +55,211 @@
 
 </section>
 
-<section id="shopping-cart">
-    <table>
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-                <th>Action</th>
-            </tr>
-        </thead>
+<!-- Cart Details Container -->
+<div id="cart-details">
 
-        <tbody>
-            <!-- Item 1 -->
-            <tr>
-                <td>
-                    <img src="assets/images/margherita-pizza.webp" alt="Margherita Pizza" width="80">
-                    <h3>Margherita Pizza</h3>
-                    <p>Classic delight with fresh cheese & basil.</p>
-                </td>
-                <td>₹249</td>
-  <td>
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
-                </td>
-                <td>₹249</td>
-                <td>
-                    <a href="#"> <img src="assets/images/Delete-button.webp" width="50"> </a>
-                </td>
-            </tr>
+    <!-- Shopping Cart Section -->
+    <section id="shopping-cart">
 
-            <!-- Item 2 -->
+        <table>
 
-            <tr>
-                <td>
-                    <img src="assets/images/icon/cheese-burger.png" width="80">
-                    <h3>Cheese Burger</h3>
-                    <p>Juicy grilled burger with cheese & veggies.</p>
-                </td>
-                <td>₹189</td>
-                <td>
-                    <button>-</button>
-                    <span>2</span>
-                    <button>+</button>
-                </td>
-                <td>₹378</td>
-                <td>
-                    <a href="#"> <img src="assets/images/Delete-button.webp" width="50"></a>
-                </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
 
-  <!-- Item 3 -->
+            <tbody>
 
-            <tr>
-                <td>
-                    <img src="assets/images/icon/creamy-pasta.png" alt="Creamy Pasta" width="80">
-                    <h3>Creamy Pasta</h3>
-                    <p>Delicious white sauce pasta with herbs.</p>
-                </td>
-                <td>₹199</td>
-                <td>
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
-                </td>
-                <td>₹199</td>
-                <td>
-                    <a href href="#"> <img src="assets/images/Delete-button.webp" width="50"></a>
-                </td>
-            </tr>
+                <!-- Item 1: Margherita Pizza -->
+                <tr>
+                    <td>
+                        <div class="cart-item">
 
-        </tbody>
+                            <img src="assets/images/Margherita-Pizza.jpeg"
+                                 alt="Margherita Pizza"
+                                 width="80">
 
-    </table>
+                            <div>
+                                <h3>Margherita Pizza</h3>
+                                <p>Classic delight with fresh cheese &amp; basil.</p>
+                            </div>
 
-</section>
+                        </div>
+                    </td>
 
-<aside id="order-summary">
-    <h2>Order Summary</h2>
-  
-    <p> <span>Subtotal (3 Items)</span> <span>₹826.00</span> </p>
-  
-    <p> <span>Delivery Charges</span> <span>₹40.00</span> </p>
-  
-    <p> <span>Packaging Charges</span> <span>₹20.00</span> </p>
-  
-    <hr>
-    <h3> <span>Total Amount</span> <span>₹886.00</span> </h3>
-  
-    <button type="button"> Proceed to Checkout </button>
-    <p> <img src="assets/images/Shield.webp" width="18" height="18">
-    Secure Checkout </p>
-</aside>
+                    <td>₹249</td>
+
+                    <td>
+                        <div class="quantity-box">
+                            <button type="button">−</button>
+                            <span>1</span>
+                            <button type="button">+</button>
+                        </div>
+                    </td>
+
+                    <td>₹249</td>
+
+                    <td>
+                        <a href="#" aria-label="Remove Margherita Pizza">
+                            <img src="assets/images/Delete-button.webp"
+                                 alt="Delete"
+                                 width="20">
+                        </a>
+                    </td>
+                </tr>
+
+
+                <!-- Item 2: Cheese Burger -->
+                <tr>
+                    <td>
+                        <div class="cart-item">
+
+                            <img src="assets/images/icon/cheese-burger.png"
+                                 alt="Cheese Burger"
+                                 width="80">
+
+                            <div>
+                                <h3>Cheese Burger</h3>
+                                <p>Juicy burger loaded with cheese and fresh vegetables.</p>
+                            </div>
+
+                        </div>
+                    </td>
+
+                    <td>₹199</td>
+
+                    <td>
+                        <div class="quantity-box">
+                            <button type="button">−</button>
+                            <span>1</span>
+                            <button type="button">+</button>
+                        </div>
+                    </td>
+
+                    <td>₹199</td>
+
+                    <td>
+                        <a href="#" aria-label="Remove Cheese Burger">
+                            <img src="assets/images/Delete-button.webp"
+                                 alt="Delete"
+                                 width="20">
+                        </a>
+                    </td>
+                </tr>
+
+
+                <!-- Item 3: Creamy Pasta -->
+                <tr>
+                    <td>
+                        <div class="cart-item">
+
+                            <img src="assets/images/Creamy-Pasta.webp"
+                                 alt="Creamy Pasta"
+                                 width="80">
+
+                            <div>
+                                <h3>Creamy Pasta</h3>
+                                <p>Rich and creamy pasta prepared with fresh ingredients.</p>
+                            </div>
+
+                        </div>
+                    </td>
+
+                    <td>₹229</td>
+
+                    <td>
+                        <div class="quantity-box">
+                            <button type="button">−</button>
+                            <span>1</span>
+                            <button type="button">+</button>
+                        </div>
+                    </td>
+
+                    <td>₹229</td>
+
+                    <td>
+                        <a href="#" aria-label="Remove Creamy Pasta">
+                            <img src="assets/images/Delete-button.webp"
+                                 alt="Delete"
+                                 width="20">
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- Order Summary Section -->
+    <section id="order-summary">
+
+        <h2>Order Summary</h2>
+
+        <p>
+            <span>Subtotal (3 Items)</span>
+            <span>₹677</span>
+        </p>
+
+        <p>
+            <span>Delivery Charges</span>
+            <span>₹40</span>
+        </p>
+
+        <p>
+            <span>Packaging Charges</span>
+            <span>₹20</span>
+        </p>
+
+        <hr>
+
+        <h3>
+            <span>Total Amount</span>
+            <span>₹737</span>
+        </h3>
+
+        <button type="button">Proceed to Checkout</button>
+
+        <p class="secure-checkout">
+            <img src="assets/images/Shield.webp"
+                 alt="Secure"
+                 width="20"
+                 height="20">
+            Secure Checkout
+        </p>
+
+    </section>
+
+</div>
+
 
 <!-- Cart Action Buttons -->
-
 <section id="cart-actions">
 
     <a href="menu.html">
-        <img src="assets/icons/left-arrow.png" width="18" height="18">
+        <img src="assets/images/Arrow.png"
+             alt="Back"
+             width="20"
+             height="20">
         Continue Shopping
     </a>
 
     <button type="button">
-      
-        <img src="assets/icons/delete.png" width="18" height="18">  Clear Cart
-      
+        <img src="assets/images/Delete-button.webp"
+             alt=""
+             width="18"
+             height="18">
+        Clear Cart
     </button>
 
 </section>
-
 
 </body>
 
